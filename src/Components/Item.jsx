@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 // import { initialItems } from "../App";
@@ -9,10 +10,10 @@
 //   { id: 3, description: "Charger", quantity: 1, packed: true },
 // ];
 
-function Item({ items, onDeleteItem, onToggleItem }) {
+function Item({ onDeleteItem, onToggleItem, sortedItems }) {
   return (
     <>
-      {items.map((item) => {
+      {sortedItems.map((item) => {
         return (
           <li key={item.id}>
             <input
